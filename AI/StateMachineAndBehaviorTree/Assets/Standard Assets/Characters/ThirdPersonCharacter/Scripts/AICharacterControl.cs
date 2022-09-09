@@ -24,6 +24,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
+            //Instead of chasing target and moving the AI to the target position
+            //Have the target shoot at whatever enters its range
             if (target != null)
                 agent.SetDestination(target.position);
 
